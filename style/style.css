@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+}
+
+main {
+    padding: 89px 24px;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url("/images/pattern-circles.svg"),
+        url("/images/bg-pattern.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 10%, top left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+header h1 {
+    color: #293356;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 27px;
+    text-align: center;
+}
+
+header p {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: center;
+    color: #848ead;
+    width: 180px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 34px 24px;
+    background: white;
+    box-shadow: 0px 20px 30px -5px #7f89b927;
+    margin-top: 64px;
+    border-radius: 8px;
+    width: 327px;
+}
+
+section h4 {
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 16px;
+    letter-spacing: 1.7142857313156128px;
+    text-align: center;
+    color: #848ead;
+}
+
+/* input range */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 279px;
+    height: 8px;
+    background-color: #f2f2f2;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 41px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* height: 20px;
+    width: 20px; */
+    border-radius: 50%;
+    background-color: #10d8c4;
+    box-shadow: 0px 15px 30px 0px #00ffe799;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    background-image: url(/images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type="range"]::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #10d8c4;
+    border: 4px solid #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    margin-top: -6px;
+    cursor: pointer;
+}
+
+/*  */
+section .price {
+    color: #293356;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 44px;
+    letter-spacing: -0.800000011920929px;
+    margin-top: 24px;
+    text-align: center;
+}
+
+section span {
+    color: #848ead;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+section .flex {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 34px;
+    padding-bottom: 38px;
+}
+
+section .bill {
+    color: #848ead;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: center;
+}
+
+section .flex .discount {
+    height: 19px;
+    /* width: 41px; */
+    border-radius: 9.5px;
+    background: #feede8;
+    color: #ff8d68;
+    font-family: Manrope;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 14px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding: 2px 7px;
+}
+
+/* checkbox */
+.toggle {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #9e9aa7;
+    align-self: flex-end;
+}
+
+.toggle input[type="checkbox"] {
+    display: none;
+}
+
+.slider {
+    position: relative;
+    width: 43px;
+    height: 22px;
+    border-radius: 15px;
+    background: #cfd8ef;
+    transition: all 0.3s ease;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 3px;
+    left: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.toggle input[type="checkbox"]:checked+.slider {
+    background-color: #10d8c4;
+}
+
+.toggle input[type="checkbox"]:checked+.slider::before {
+    transform: translateX(16px);
+}
+
+.label-text {
+    cursor: pointer;
+}
+
+/*  */
+section .footer {
+    margin-top: 24px;
+    color: #848ead;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    align-items: center;
+}
+
+section .footer span {
+    margin-right: 16px;
+}
+
+button {
+    background: #293356;
+    padding: 13px 46px;
+    border-radius: 20.5px;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 16px;
+    text-align: center;
+    color: #becdff;
+    border: none;
+    margin-top: 38px;
+}
+
+hr {
+    width: 100%;
+    height: 0.1rem;
+    opacity: 0.2;
+}
+
+.discount span {
+    display: none;
+}
+
+.flexbox {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+    header h1 {
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: 0px;
+    }
+
+    header p {
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        width: 367px;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 92px;
+        background-size: auto, contain;
+    }
+
+    section {
+        width: 540px;
+        margin: 0 auto;
+    }
+
+    .box-header {
+        flex-wrap: wrap;
+        padding: 0 4.8rem 0 4.8rem;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    input[type="range"] {
+        width: 444px;
+        order: 3;
+    }
+
+    section h4 {
+        align-self: center;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 2px;
+    }
+
+    section .price {
+        margin-top: 0;
+        font-size: 40px;
+        line-height: 55px;
+        letter-spacing: -1px;
+    }
+
+    section .flex {
+        margin-top: 50px;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        height: 40px;
+        width: 40px;
+    }
+
+    hr {
+        width: 540px;
+    }
+
+    section .flex-wrap {
+        display: flex;
+        gap: 133px;
+    }
+
+    section .footer {
+        align-items: flex-start;
+    }
+
+    button {
+        align-self: center;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    input:hover {
+        cursor: pointer;
+    }
+
+    .discount span {
+        display: block;
+        font-size: 10px;
+        font-weight: 800;
+        line-height: 14px;
+        text-align: center;
+        color: #ff8d68;
+    }
+
+    .discount {
+        display: flex;
+    }
+}
